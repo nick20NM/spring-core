@@ -26,6 +26,11 @@ public class SpringCoreApplication {
 		System.out.println(personBean);
 		Test testBean = context.getBean(Test.class);
 		testBean.display();
+		Animal dog = context.getBean("dog", Animal.class);
+		dog.play();
+		Animal cat = context.getBean("cat", Animal.class);
+		cat.play();
+
 
 	}
 
