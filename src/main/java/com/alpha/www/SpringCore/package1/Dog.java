@@ -4,10 +4,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component("dog")
+//@Component("dog")
 //@Qualifier("dog")
-//@Component
-//@Primary
+@Component
+@Primary
 public class Dog implements Animal{
     @Override
     public void play() {
