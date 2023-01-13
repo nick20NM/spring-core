@@ -9,9 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import test.Test;
 
 @SpringBootApplication
-//@ComponentScan(basePackages = {"",""})
+@ComponentScan(basePackages = {"com.alpha.www.SpringCore","test"})
 public class SpringCoreApplication {
 
 	public static void main(String[] args) {
@@ -22,6 +23,10 @@ public class SpringCoreApplication {
 		ApplicationContext context = SpringApplication.run(SpringCoreApplication.class, args);
 		Person personBean = context.getBean(Person.class);
 		personBean.playWithAnimal();
+		System.out.println(personBean);
+		Test testBean = context.getBean(Test.class);
+		testBean.display();
+
 	}
 
 }
