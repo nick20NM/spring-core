@@ -16,6 +16,9 @@ public class Person {
     Animal animal;
     @Autowired
     Student student;
+    @Autowired
+    @Qualifier("samosa1")
+    Samosa samosa;
 
 //    @Autowired
 //    public Person(@Qualifier("cat") Animal animal) {
@@ -57,5 +60,6 @@ public class Person {
         // using animal
         animal.play();
         student.studentDetails();
+        samosa.eat();
     }
 }

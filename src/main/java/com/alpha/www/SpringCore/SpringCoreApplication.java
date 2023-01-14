@@ -1,14 +1,13 @@
 package com.alpha.www.SpringCore;
 
-import com.alpha.www.SpringCore.package1.Animal;
-import com.alpha.www.SpringCore.package1.Cat;
-import com.alpha.www.SpringCore.package1.Dog;
-import com.alpha.www.SpringCore.package1.Person;
+import com.alpha.www.SpringCore.package1.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Primary;
 import test.Test;
 
 @SpringBootApplication
@@ -33,5 +32,19 @@ public class SpringCoreApplication {
 
 
 	}
+
+//	@Bean(name = "samosa1")
+////	@Primary
+//	public Samosa getSamosa1(){
+//		System.out.println("samosa 1");
+//		return new Samosa("samosa 1");
+//	}
+//
+//	@Bean(name = "samosa2")
+////	@Primary
+//	public Samosa getSamosa2(){
+//		System.out.println("samosa 2");
+//		return new Samosa("samosa 2");
+//	}
 
 }
